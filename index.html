@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ICONIX | Be Unique</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html">
+        <img src="./images/iconixtext2.png" alt="">
+      </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">WHAT WE DO</a></li>
+          <li><a href="">CLIENTS</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>One Stop Shop For All Your Logo Needs</h1>
+      <p>Making logo designs is one of the most difficult things in the World
+      <br>
+      as it takes a lot of effort to get the right concept, but don't worry, we got you covered.</p>
+      <a href="" class="hero-btn">Click Here To Know More</a>
+    </div>
+
+  </section>
+
+  <!-- What We Do -->
+
+  <section class="course">
+    <h1>What We Do</h1>
+    <p>Our main categories of services</p>
+
+    <div class="row">
+      <div class="course-col">
+        <h3>LOGOS</h3>
+        <p>We design authentic and completely quality rich Logos for our Clients</p>
+      </div>
+
+      <div class="course-col">
+        <h3>TAGLINES</h3>
+        <p>If you don't have one of your own, no issues, we will provide you with the best suitable tagline</p>
+      </div>
+
+      <div class="course-col">
+        <h3>VIDEO EDITING</h3>
+        <p>We create dynamic logo intros with eye catching transitions for our clients to use on their desired social media platform</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Clients -->
+  <section class="clients">
+    <h1>Our Clients</h1>
+    <div class="cards">
+      <div class="container">
+        <div class="card" style="--i:-1">
+          <div class="content" style="--j:1;">
+            <img src="/images/WEBVARSE.png" alt="">
+            <a href="https://www.instagram.com/webvarse/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="card" style="--i:0">
+          <div class="content" style="--j:2;">
+            <img src="/images/XPRESSVAY.png" alt="">
+            <a href="https://www.instagram.com/xpress_vay/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="card" style="--i:1">
+          <div class="content" style="--j:3;">
+            <img src="/images/GTLOGO1.png" alt="">
+            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="cards">
+      <div class="container">
+        <div class="card" style="--i:-1">
+          <div class="content" style="--j:1;">
+            <img src="/images/ASH_FINAL.png" alt="">
+            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="card" style="--i:0">
+          <div class="content" style="--j:2;">
+            <img src="/images/LAUNDRIXX.png" alt="">
+            <a href="https://www.instagram.com/laundrixs/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="card" style="--i:1">
+          <div class="content" style="--j:3;">
+            <img src="/images/ny.png" alt="">
+            <a href="" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Javascript for Toggle menu -->
+  <script>
+    
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+  
+</body>
+</html>
