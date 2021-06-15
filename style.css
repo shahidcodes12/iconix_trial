@@ -5,6 +5,19 @@
   font-family: 'Poppins', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a68bc0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #192b9e;
+}
+
 .header {
   min-height: 100vh;
   width: 100%;
@@ -23,8 +36,6 @@ nav {
 
 nav img {
   width: 150px;
-  background-color: rgb(12, 12, 12);
-  border-radius: 5px;
 }
 
 .nav-links {
@@ -151,6 +162,7 @@ nav .fas {
   margin: auto;
   text-align: center;
   padding-top: 100px;
+  padding-bottom: 150px;
 }
 
 h1 {
@@ -199,10 +211,22 @@ h3{
 /* clients */
 
 .clients {
+  background:#0e1a64;
+  color: #fff;
+  border-radius:10%;
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 50px;
+  margin-bottom: 10%;
+  box-shadow:
+    0 0 30px 10px #0e1a64,  /* inner white */
+    0 0 50px 20px #303e9c, /* middle magenta */
+    0 0 80px 30px #0ff; /* outer cyan */
+}
+
+.clients p{
+  color: #fff;
 }
 
 .cards {
@@ -293,7 +317,7 @@ h3{
 .card .content .fab {
   position: relative;
   display: block;
-  color: #1e2657;
+  color: #888;
   margin: 30px;
   font-size: 50px;
   cursor: pointer;
@@ -302,12 +326,21 @@ h3{
   transform: translateY(50px);
 }
 
+.card .content .fab:hover {
+  color: #0e1a64;
+}
+
 .card:hover .content .fab{
   opacity: 1;
   transform: translateY(0px);
 }
 
 @media (max-width: 900px) {
+
+  .clients {
+    border-radius: 20px;
+  }
+
   .cards {
     background: transparent;
   }
@@ -350,5 +383,69 @@ h3{
     opacity: 1;
     transform: translateY(0px);
   }
+}
 
+/* footer */
+
+footer {
+  
+  background: #0e1a64;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-content {
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-center h3{
+  font-size:1.8rem;
+  font-weight:600;
+  text-transform:capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  color: #fff;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 30px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color 0.7 ease;
+}
+.socials a:hover i{
+  color:#5ed1cb;
+}
+.footer-bottom {
+  background:rgba(4, 9, 30, 0.7);
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  color: #fff;
+  font-size:14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
 }
